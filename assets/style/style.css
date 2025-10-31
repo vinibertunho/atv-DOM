@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Tema Claro */
+body.light-mode {
+  background: #f5f7fa;
+  color: #222;
+}
+
+/* Tema Escuro */
+body.dark-mode {
+  background: #181920;
+  color: #f5f7fa;
+}
+
+/* Tema Azul */
+body.blue-mode {
+  background: linear-gradient(120deg, #2376ae 0%, #57b7ff 100%);
+  color: #fff;
+}
+
+/* Tema Verde */
+body.green-mode {
+  background: linear-gradient(120deg, #1e6d3a 0%, #6ee7b7 100%);
+  color: #fff;
+}
+
+/* Tema Vermelho */
+body.red-mode {
+  background: linear-gradient(120deg, #ae2323 0%, #ff8686 100%);
+  color: #fff;
+}
+
+/* Tema Roxo */
+body.purple-mode {
+  background: linear-gradient(120deg, #5b2e8a 0%, #b87df0 100%);
+  color: #fff;
+}
+
+/* Ajustes para elementos no tema roxo */
+body.purple-mode header p,
+body.purple-mode h2,
+body.purple-mode #contato a,
+body.purple-mode footer {
+  color: #fff;
+}
+
+body.purple-mode #tema-btn, body.purple-mode #tema-select {
+  background: #fff;
+  color: #5b2e8a;
+}
+
+body.purple-mode main {
+  background: rgba(29,29,36,0.96);
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  flex-direction: column;
+  transition: background 0.3s;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.11);
+  border: 3px solid #2376ae;
+  background: #fff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #2376ae;
+  margin: 0;
+  font-weight: 500;
+}
+
+body.dark-mode header p,
+body.blue-mode header p,
+body.green-mode header p,
+body.red-mode header p {
+  color: #fff;
+}
+
+#tema-btn, #tema-select {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #2376ae;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+
+#tema-btn:hover, #tema-select:hover {
+  background: #154c73;
+}
+
+body.dark-mode #tema-btn, body.dark-mode #tema-select,
+body.blue-mode #tema-btn, body.blue-mode #tema-select,
+body.green-mode #tema-btn, body.green-mode #tema-select,
+body.red-mode #tema-btn, body.red-mode #tema-select {
+  background: #fff;
+  color: #2376ae;
+}
+
+main {
+  max-width: 650px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.92);
+  border-radius: 18px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+body.dark-mode main,
+body.blue-mode main,
+body.green-mode main,
+body.red-mode main {
+  background: rgba(29,29,36,0.96);
+  color: #fff;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2376ae;
+}
+
+body.dark-mode h2,
+body.blue-mode h2,
+body.green-mode h2,
+body.red-mode h2 {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: #e3f2fd;
+  margin: 0.3rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  transition: background 0.3s;
+}
+
+body.dark-mode li,
+body.blue-mode li,
+body.green-mode li,
+body.red-mode li {
+  background: rgba(255,255,255,0.12);
+}
+
+#contato a {
+  color: #2376ae;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+#contato a:hover {
+  text-decoration: underline;
+  color: #154c73;
+}
+
+body.dark-mode #contato a,
+body.blue-mode #contato a,
+body.green-mode #contato a,
+body.red-mode #contato a {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  background: #2376ae;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  letter-spacing: 1px;
+  font-size: 1.02rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+
+body.dark-mode footer,
+body.blue-mode footer,
+body.green-mode footer,
+body.red-mode footer {
+  background: #181920;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  main {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  .foto-perfil {
+    width: 90px;
+    height: 90px;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
